@@ -1,1 +1,35 @@
 
+          
+1.	After Filling in all the details, click on Create Storage and wait for some time 
+2.	Now you have yor Bash terminal running. please ignore the warning message.
+ 
+1.	Now for creating a web app in Azure,first you have to create an app service plan. use the below command to create App Service Plan.
+az appservice plan create --name <App service plan name> --resource-group <resource group name> --is-linux
+ 
+1.	 Now use the below command to create a web app in azure.
+az webapp create --resource-group <resource group name> --plan <App service plan name> --name <web app name> --deployment-container-image-name nginx
+ 
+1.	 After executing the commands wait for some time until the app service plan and web app is created.
+Task 3: Get the Deployed App URL
+1.	Click on App services in the left-hand panel of the Azure portal menu.
+             
+1.	Go to the WebApp that you have created.
+            
+1.	Now copy the url of your web app and paste it in a new tab. 
+            
+1.	You will see Welcome to nginx message.
+ 
+ 
+Task 4: Understanding Charts
+1.	Switch back to the OverView Page of Web App Created. If you scroll down, You can see several charts. 
+2.	Hit the App URL 4-5 Times to simulate the request-response cycle.
+3.	Please wait for 2-5 minutes and refresh the page if the graph does not show the traffic details.
+4.	You should be able to see the corresponding telemetry displayed in the charts.
+5.	These Charts will provide a clear understanding of traffic you are getting on the New Web App created.
+6.	This will include HTTP 5xx, Data In, Data Out, Requests(Number of requests), Response Time.
+7.	Understanding Charts
+•	HTTP 5xx Chart: HTTP 5xx responses indicate the server issues. A sudden spike in the number of 5xx responses can be the result of the following:
+•	Deploying new code which contained a bug.
+•	Errors returned by upstream services that your application depends on.
+•	Your application is overwhelmed by the amount of traffic it is receiving.
+•	Issues in the configuration for your app service.
