@@ -18,7 +18,7 @@
   - [Ransomware Proof of Concept (Decrypter)](https://github.com/styll1)
   - [Keylogger with Email Capability](https://github.com/styll1)
 - <b>Python</b>
-  - [Package Delivery Application (Datastructures and Algorithms Demo)](https://github.com/joshmadakor1/Package-Delivery-Pathfinding-Algorithm)
+  - [Package Delivery Application (Datastructures and Algorithms Demo)]()
 
 <h2>📺 Popular YouTube Videos</h2>
 
