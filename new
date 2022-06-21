@@ -1,9 +1,5 @@
 
-          
-1.	After Filling in all the details, click on Create Storage and wait for some time 
-2.	Now you have yor Bash terminal running. please ignore the warning message.
- 
-1.	Now for creating a web app in Azure,first you have to create an app service plan. use the below command to create App Service Plan.
+Now for creating a web app in Azure,first you have to create an app service plan. use the below command to create App Service Plan.
 az appservice plan create --name <App service plan name> --resource-group <resource group name> --is-linux
  
 1.	 Now use the below command to create a web app in azure.
